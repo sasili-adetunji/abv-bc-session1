@@ -7,7 +7,9 @@ Date: 16 May, 2017.
  
 */
 
-function Games(name, team, gamingArena){
+module.exports = {
+
+Games: function (name, team, gamingArena) {
     if (name === null) {
         return "Invalid input"
     } else {
@@ -15,10 +17,9 @@ function Games(name, team, gamingArena){
         this.team = team;
         this.gamingArena = gamingArena;
     }
-}
+},
 
-Games.prototype = {
-    teamGames: function(){
+teamGames: function () {
         if (this.name === "") {
             return "Invalid input";
         } else {
@@ -31,8 +32,7 @@ Games.prototype = {
             }
         }
     },
-
-    whatToUse: function(equipment){
+whatToUse: function(equipment){
         if ((this.name === "") || (equipment === null)) {
             return "Invalid input"
         } 
@@ -45,7 +45,7 @@ Games.prototype = {
         
     },
 
-    whereItsPlayed: function() {
+whereItsPlayed: function() {
         if (this.name === "")  {
             return "Invalid input"
         } else  {
@@ -56,6 +56,7 @@ Games.prototype = {
     
 };
 
+/*
 let football = new Games("Football", "11", "football pitch");
 let rugby = new Games("Rugby", "11", "pitch");
 let basketball = new Games("Basketball", "5", "basketball court");
@@ -70,3 +71,5 @@ console.log(ludo.teamGames());
 console.log(swimming.whatToUse("water"));
 console.log(tennis.whatToUse("racket and tennis ball"));
 console.log(rugby.whereItsPlayed());
+
+*/
