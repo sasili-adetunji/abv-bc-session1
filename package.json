@@ -15,8 +15,7 @@
     "url": "https://github.com/sasili-adetunji/abv-bc-session1/issues"
   },
   "homepage": "https://github.com/sasili-adetunji/abv-bc-session1#readme",
-  "description": ""
-  "dependencies" {
+  "dependencies": {
     "jasmine": "^2.6.0"
   },
   "devDependencies": {}
